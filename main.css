@@ -1,0 +1,68 @@
+
+ 	.primary, .secondary 
+ 	{
+ 		position: absolute;
+		transition: -webkit-transform 2s;
+	
+	
+	} 
+	.secondary {
+		-webkit-transform:rotateY(-180deg);
+		
+		
+	} 
+
+	.portfolio-item:hover .secondary{
+		-webkit-transform:rotateY(0deg);
+	
+	}
+
+	.portfolio-item:hover .primary {
+		-webkit-transform:rotateY(180deg);
+		
+	}
+
+
+
+/* This is what we tried first:
+
+.portfolio-item .secondary{
+	transition: -webkit-transform 2s;
+	transition: opacity 1s;
+	
+	} 
+	.portfolio-item:hover .secondary{
+		-webkit-transform:rotateY(180deg);
+		opacity:1;
+		
+	} 
+	
+
+.secondary {
+	position: relative;
+	top: -200px;
+	opacity: 0;
+	
+	
+
+}
+
+/*.primary {
+	opacity: 1.0;
+	transition: opacity 1s;
+
+	
+	
+}
+
+.secondary:hover {
+	opacity:1.0;
+    
+}
+	
+
+.primary:hover {
+	opacity:0; 
+	
+}
+*/
